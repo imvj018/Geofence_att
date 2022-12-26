@@ -1,0 +1,24 @@
+      <ImageView
+                android:id="@+id/prevdate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/leftarrow" />
+
+
+            <ImageView
+                android:id="@+id/nextdate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/rightarrow" />
+
+
+                   @Override
+                    public void onBackPressed() {
+                        Intent intent = new Intent(.this, Dashboard.class);
+                        startActivity(intent);
+
+                    }
